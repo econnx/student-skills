@@ -1,0 +1,13 @@
+{
+  "name": "student-skills",
+  "description": "Claude Code skills for students: essay check, file privacy check, exam prep",
+  "owner": {
+    "name": "econnx"
+  },
+  "plugins": [
+    {
+      "name": "student-skills",
+      "source": "./"
+    }
+  ]
+}

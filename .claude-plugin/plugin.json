@@ -1,0 +1,8 @@
+{
+  "name": "student-skills",
+  "version": "0.1.0",
+  "description": "Skills for students: check an essay against the rubric, check a file for hidden data before you submit it, turn notes into a practice exam",
+  "author": { "name": "econnx" },
+  "repository": "https://github.com/econnx/student-skills",
+  "license": "MIT"
+}
