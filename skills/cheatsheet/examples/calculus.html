@@ -1,0 +1,48 @@
+<!doctype html><meta charset="utf-8"><title>Calculus 1 — Test 2 cheat sheet</title>
+<style>
+@page { size: A4; margin: 8mm; }
+body { font: 8.5pt/1.25 "Helvetica Neue", Arial, sans-serif; columns: 2; column-gap: 6mm; margin: 0; }
+h1 { font-size: 11pt; margin: 0 0 3pt; column-span: all; }
+h2 { font-size: 9.5pt; margin: 4pt 0 1pt; break-after: avoid; border-bottom: 0.5pt solid #999; }
+p, li { margin: 0 0 1.5pt; }
+ol, ul { padding-left: 11pt; margin: 0 0 2pt; }
+.warn { color: #b00; }
+</style>
+<h1>Calculus 1 — Test 2 (derivatives, Taylor, curve sketching)</h1>
+<h2>1. Derivative rules</h2>
+<p>(u ± v)′ = u′ ± v′ · (uv)′ = u′v + uv′ · (u/v)′ = (u′v − uv′)/v², v ≠ 0</p>
+<p>(f(g(x)))′ = f′(g(x))·g′(x)</p>
+<p>(xⁿ)′ = nxⁿ⁻¹ · (eˣ)′ = eˣ · (aˣ)′ = aˣ ln a · (ln x)′ = 1/x, x &gt; 0</p>
+<p>(sin x)′ = cos x · (cos x)′ = −sin x · (tg x)′ = 1/cos²x</p>
+<p>(arcsin x)′ = 1/√(1−x²) · (arctg x)′ = 1/(1+x²)</p>
+<p class="warn">chain rule: never forget g′(x)</p>
+<h2>2. Tangent and differential</h2>
+<p>tangent at x₀: y = f(x₀) + f′(x₀)(x − x₀)</p>
+<p>f(x₀ + Δx) ≈ f(x₀) + f′(x₀)Δx — for small Δx</p>
+<h2>3. L'Hôpital's rule</h2>
+<p>lim f/g = lim f′/g′ — only for 0/0 or ∞/∞, and if the right limit exists</p>
+<p>0·∞ → rewrite as 0/0 · 1^∞, 0⁰, ∞⁰ → e^(lim g·ln f)</p>
+<p class="warn">check the form before every application</p>
+<h2>4. Taylor / Maclaurin</h2>
+<p>f(x) = Σ f⁽ᵏ⁾(a)/k! · (x−a)ᵏ + Rₙ(x), k = 0…n</p>
+<p>Lagrange remainder: Rₙ(x) = f⁽ⁿ⁺¹⁾(c)/(n+1)! · (x−a)ⁿ⁺¹, c between a and x</p>
+<p>error ≤ M·|x−a|ⁿ⁺¹/(n+1)!, M = max |f⁽ⁿ⁺¹⁾| on [a, x]</p>
+<p>eˣ = 1 + x + x²/2! + x³/3! + … · sin x = x − x³/3! + x⁵/5! − …</p>
+<p>cos x = 1 − x²/2! + x⁴/4! − … · ln(1+x) = x − x²/2 + x³/3 − …, −1 &lt; x ≤ 1</p>
+<p>(1+x)ᵅ = 1 + αx + α(α−1)/2! · x² + …</p>
+<p class="warn">alternating series: error ≤ first dropped term</p>
+<h2>5. Monotonicity and extrema</h2>
+<ol><li>domain</li><li>f′(x), solve f′ = 0 and find where f′ does not exist</li><li>sign table of f′: + rising, − falling</li><li>+ → − max, − → + min</li></ol>
+<p>on [a, b]: compare f at critical points and at a, b</p>
+<h2>6. Convexity and inflection</h2>
+<p>f″ &gt; 0 convex ∪ · f″ &lt; 0 concave ∩</p>
+<p>inflection: f″ changes sign (f″ = 0 alone is not enough)</p>
+<h2>7. Asymptotes</h2>
+<p>vertical x = a: lim f(x) = ±∞ as x → a (check gaps of the domain)</p>
+<p>horizontal y = b: b = lim f(x), x → ±∞</p>
+<p>oblique y = kx + b: k = lim f(x)/x, b = lim (f(x) − kx)</p>
+<p class="warn">x → +∞ and x → −∞ separately: k and b may differ</p>
+<h2>8. Curve sketching plan</h2>
+<p>domain → parity → zeros → asymptotes → f′ (extrema) → f″ (inflection) → table → graph</p>
+<h2>9. Optimization</h2>
+<p>variable → function of one variable → domain → f′ = 0 → check it is a max/min → answer with units</p>
