@@ -1,7 +1,7 @@
 {
   "name": "student-skills",
-  "version": "0.2.0",
-  "description": "Skills for students: check an essay against the rubric, check a file for hidden data before you submit it, turn notes into a practice exam, build a one-page A4 cheat sheet",
+  "version": "0.3.0",
+  "description": "Skills for students: check an essay against the rubric, check your homework solution step by step, check a file for hidden data before you submit it, turn notes into a practice exam, build a one-page A4 cheat sheet",
   "author": {
     "name": "econnx"
   },

@@ -1,6 +1,6 @@
 {
   "name": "student-skills",
-  "description": "Claude Code skills for students: essay check, file privacy check, exam prep, cheat sheet",
+  "description": "Claude Code skills for students: essay check, solution check, file privacy check, exam prep, cheat sheet",
   "owner": {
     "name": "econnx"
   },
